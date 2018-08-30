@@ -1,0 +1,37 @@
+FORMAT: 1A
+HOST: http://127.0.0.1:8000/api
+
+# API Apresentação
+Abaixo teremos um exemplo básico de documentação de **API**
+
+# Group Posts
+
+## Posts [GET /post]
+
++ Response 200 (application/json)
+
+    + Body
+
+            [
+                {
+                    "id": 1,
+                    "title": "title",
+                    "body": "body",
+                    "author": 1
+                }
+            ]
+# Group Author
+
+## Author [GET /author]
+
++ Response 200 (application/json)
+
+    + Body
+
+            [
+                {
+                    "id": 1,
+                    "name": "Guilherme",
+                    "email": "guilhermeoliveira.f11@gmail.com"
+                }
+            ]

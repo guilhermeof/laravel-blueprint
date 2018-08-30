@@ -16,3 +16,24 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('post', function () {
+    return response()->json([
+        [
+            "id" => 1,
+            "title" => "foo title",
+            "body" => "bar body",
+            "author" => 1
+        ]
+    ]);
+});
+
+Route::get('author', function () {
+    return response()->json([
+        [
+            "id" => 1,
+            "name" => "Guilherme",
+            "email" => "guilhermeoliveira.f11@gmail.com"
+        ]
+     ]);
+});
