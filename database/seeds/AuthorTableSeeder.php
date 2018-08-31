@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class AuthorTableSeeder extends Seeder
 {
     /**
      * Seed the application's database.
@@ -11,6 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(AuthorTableSeeder::class);
+        factory(App\Author::class, 1)->create();
     }
 }
